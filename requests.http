@@ -1,0 +1,25 @@
+### Extensao "REST Client" (VS Code) ou cliente HTTP do Rider / Visual Studio.
+### Suba a API antes:  dotnet run --project src/Triangulos.Api --urls http://localhost:5000
+
+@host = http://localhost:5000
+
+### Health
+GET {{host}}/health
+
+### Classificar (GET) - triangulo 3,4,5
+GET {{host}}/api/triangulos/classificar?a=3&b=4&c=5
+
+### Classificar - experimente outras entradas!
+GET {{host}}/api/triangulos/classificar?a=5&b=3&c=5
+
+### Analisar (POST) - analise completa
+POST {{host}}/api/triangulos/analisar
+Content-Type: application/json
+
+{ "a": 3, "b": 4, "c": 5 }
+
+### Analisar - outro triangulo
+POST {{host}}/api/triangulos/analisar
+Content-Type: application/json
+
+{ "a": 2, "b": 3, "c": 4 }
