@@ -1,0 +1,183 @@
+﻿SENSIBILIDADE - B06 (RN06: angulo C pela lei dos cossenos)
+Reintroducao: em CalculadoraTriangulo.Angulos, o denominador do angulo C voltou de '(2 * a * b)' para '(2 * a * c)'.
+Comando: dotnet test --filter "FullyQualifiedName~CalculadoraTrianguloTests|FullyQualifiedName~PropriedadesTests"
+Resultado esperado: Angulos_LadosValidos_RetornaAngulosOpostosArredondados falha para todo triangulo em que
+b != c e o angulo C nao e reto; Angulos_TrianguloValido_SomaEh180Graus e
+Angulos_LadosRotacionados_AngulosRotacionamJunto tambem falham.
+=====================================================================
+  Determinando os projetos a serem restaurados...
+  Todos os projetos est├úo atualizados para restaura├º├úo.
+  Triangulos.Core -> F:\.NET-Testes-Unitarios\src\Triangulos.Core\bin\Debug\net8.0\Triangulos.Core.dll
+  Triangulos.Api -> F:\.NET-Testes-Unitarios\src\Triangulos.Api\bin\Debug\net8.0\Triangulos.Api.dll
+  Triangulos.Tests -> F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\bin\Debug\net8.0\Triangulos.Tests.dll
+Execu├º├úo de teste para F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\bin\Debug\net8.0\Triangulos.Tests.dll (.NETCoreApp,Version=v8.0)
+1 arquivos de teste no total corresponderam ao padr├úo especificado.
+dotnet : [xUnit.net 00:00:00.40]     Triangulos.Tests.PropriedadesTests.Angulos_TrianguloValido_SomaEh180Graus(a: 4, 
+b: 5, c: 6) [FAIL]
+No C:\Users\buttler\AppData\Local\Temp\ps-script-8452a301-7949-45f6-9ef6-01a20ec48b5f.ps1:110 caractere:1
++ dotnet test --nologo --filter "FullyQualifiedName~CalculadoraTriangul ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([xUnit.net 00:0...5, c: 6) [FAIL]:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  Com falha Triangulos.Tests.PropriedadesTests.Angulos_TrianguloValido_SomaEh180Graus(a: 4, b: 5, c: 6) [2 ms]
+  Mensagem de erro:
+   Assert.InRange() Failure: Value not in range
+Range:  (179,97 - 180,03)
+Actual: 181,19999999999999
+  Rastreamento de pilha:
+     at Triangulos.Tests.PropriedadesTests.Angulos_TrianguloValido_SomaEh180Graus(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\PropriedadesTests.cs:line 74
+   at InvokeStub_PropriedadesTests.Angulos_TrianguloValido_SomaEh180Graus(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:00.40]     Triangulos.Tests.PropriedadesTests.Angulos_TrianguloValido_SomaEh180Graus(a: 3, b: 3, c: 
+4) [FAIL]
+[xUnit.net 00:00:00.40]     Triangulos.Tests.PropriedadesTests.Angulos_TrianguloValido_SomaEh180Graus(a: 2, b: 3, c: 
+4) [FAIL]
+  Com falha Triangulos.Tests.PropriedadesTests.Angulos_TrianguloValido_SomaEh180Graus(a: 3, b: 3, c: 4) [< 1 ms]
+  Mensagem de erro:
+   Assert.InRange() Failure: Value not in range
+Range:  (179,97 - 180,03)
+Actual: 181,59999999999999
+  Rastreamento de pilha:
+     at Triangulos.Tests.PropriedadesTests.Angulos_TrianguloValido_SomaEh180Graus(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\PropriedadesTests.cs:line 74
+   at InvokeStub_PropriedadesTests.Angulos_TrianguloValido_SomaEh180Graus(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.PropriedadesTests.Angulos_TrianguloValido_SomaEh180Graus(a: 2, b: 3, c: 4) [< 1 ms]
+  Mensagem de erro:
+   Assert.InRange() Failure: Value not in range
+Range:  (179,97 - 180,03)
+Actual: 176,34
+  Rastreamento de pilha:
+     at Triangulos.Tests.PropriedadesTests.Angulos_TrianguloValido_SomaEh180Graus(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\PropriedadesTests.cs:line 74
+   at InvokeStub_PropriedadesTests.Angulos_TrianguloValido_SomaEh180Graus(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:00.40]     Triangulos.Tests.PropriedadesTests.Angulos_TrianguloValido_SomaEh180Graus(a: 7, b: 8, c: 
+9) [FAIL]
+  Com falha Triangulos.Tests.PropriedadesTests.Angulos_TrianguloValido_SomaEh180Graus(a: 7, b: 8, c: 9) [< 1 ms]
+  Mensagem de erro:
+   Assert.InRange() Failure: Value not in range
+Range:  (179,97 - 180,03)
+Actual: 181,88999999999999
+  Rastreamento de pilha:
+     at Triangulos.Tests.PropriedadesTests.Angulos_TrianguloValido_SomaEh180Graus(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\PropriedadesTests.cs:line 74
+   at InvokeStub_PropriedadesTests.Angulos_TrianguloValido_SomaEh180Graus(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:00.41]     Triangulos.Tests.PropriedadesTests.Angulos_LadosRotacionados_AngulosRotacionamJunto(a: 2, 
+b: 3, c: 4) [FAIL]
+[xUnit.net 00:00:00.41]     
+Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(a: 4, b: 5, c: 3, 
+anguloA: 53,130000000000003, anguloB: 90, anguloC: 36,869999999999997) [FAIL]
+[xUnit.net 00:00:00.41]     Triangulos.Tests.PropriedadesTests.Angulos_LadosRotacionados_AngulosRotacionamJunto(a: 4, 
+b: 5, c: 6) [FAIL]
+[xUnit.net 00:00:00.41]     
+Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(a: 3, b: 3, c: 4, 
+anguloA: 48,189999999999998, anguloB: 48,189999999999998, anguloC: 83,620000000000005) [FAIL]
+  Com falha Triangulos.Tests.PropriedadesTests.Angulos_LadosRotacionados_AngulosRotacionamJunto(a: 2, b: 3, c: 4) [4 ms]
+  Mensagem de erro:
+   Assert.Equal() Failure: Values differ
+Expected: Angulos { A = 46,57, B = 100,81, C = 28,96 }
+Actual:   Angulos { A = 46,57, B = 104,48, C = 0 }
+  Rastreamento de pilha:
+     at Triangulos.Tests.PropriedadesTests.Angulos_LadosRotacionados_AngulosRotacionamJunto(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\PropriedadesTests.cs:line 57
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+  Com falha Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(a: 4, b: 5, c: 3, anguloA: 53,130000000000003, anguloB: 90, anguloC: 36,869999999999997) [3 ms]
+  Mensagem de erro:
+   Assert.Equal() Failure: Values differ
+Expected: Angulos { A = 53,13, B = 90, C = 36,87 }
+Actual:   Angulos { A = 53,13, B = 90, C = 0 }
+  Rastreamento de pilha:
+     at Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(Double a, Double b, Double c, Double anguloA, Double anguloB, Double anguloC) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\CalculadoraTrianguloTests.cs:line 73
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.PropriedadesTests.Angulos_LadosRotacionados_AngulosRotacionamJunto(a: 4, b: 5, c: 6) [< 1 ms]
+  Mensagem de erro:
+   Assert.Equal() Failure: Values differ
+Expected: Angulos { A = 55,77, B = 84,02, C = 41,41 }
+Actual:   Angulos { A = 55,77, B = 82,82, C = 0 }
+  Rastreamento de pilha:
+     at Triangulos.Tests.PropriedadesTests.Angulos_LadosRotacionados_AngulosRotacionamJunto(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\PropriedadesTests.cs:line 57
+   at InvokeStub_PropriedadesTests.Angulos_LadosRotacionados_AngulosRotacionamJunto(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(a: 3, b: 3, c: 4, anguloA: 48,189999999999998, anguloB: 48,189999999999998, anguloC: 83,620000000000005) [< 1 ms]
+  Mensagem de erro:
+   Assert.Equal() Failure: Values differ
+Expected: Angulos { A = 48,19, B = 48,19, C = 83,62 }
+Actual:   Angulos { A = 48,19, B = 48,19, C = 85,22 }
+  Rastreamento de pilha:
+     at Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(Double a, Double b, Double c, Double anguloA, Double anguloB, Double anguloC) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\CalculadoraTrianguloTests.cs:line 73
+   at InvokeStub_CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:00.41]     Triangulos.Tests.PropriedadesTests.Angulos_LadosRotacionados_AngulosRotacionamJunto(a: 3, 
+b: 4, c: 5) [FAIL]
+[xUnit.net 00:00:00.41]     
+Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(a: 3, b: 4, c: 2, 
+anguloA: 46,57, anguloB: 104,48, anguloC: 28,960000000000001) [FAIL]
+[xUnit.net 00:00:00.41]     
+Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(a: 2, b: 3, c: 4, 
+anguloA: 28,960000000000001, anguloB: 46,57, anguloC: 104,48) [FAIL]
+  Com falha Triangulos.Tests.PropriedadesTests.Angulos_LadosRotacionados_AngulosRotacionamJunto(a: 3, b: 4, c: 5) [< 1 ms]
+  Mensagem de erro:
+   Assert.Equal() Failure: Values differ
+Expected: Angulos { A = 53,13, B = 90, C = 36,87 }
+Actual:   Angulos { A = 53,13, B = 90, C = 0 }
+  Rastreamento de pilha:
+     at Triangulos.Tests.PropriedadesTests.Angulos_LadosRotacionados_AngulosRotacionamJunto(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\PropriedadesTests.cs:line 57
+   at InvokeStub_PropriedadesTests.Angulos_LadosRotacionados_AngulosRotacionamJunto(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(a: 3, b: 4, c: 2, anguloA: 46,57, anguloB: 104,48, anguloC: 28,960000000000001) [< 1 ms]
+  Mensagem de erro:
+   Assert.Equal() Failure: Values differ
+Expected: Angulos { A = 46,57, B = 104,48, C = 28,96 }
+Actual:   Angulos { A = 46,57, B = 104,48, C = 0 }
+  Rastreamento de pilha:
+     at Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(Double a, Double b, Double c, Double anguloA, Double anguloB, Double anguloC) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\CalculadoraTrianguloTests.cs:line 73
+   at InvokeStub_CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(a: 2, b: 3, c: 4, anguloA: 28,960000000000001, anguloB: 46,57, anguloC: 104,48) [< 1 ms]
+  Mensagem de erro:
+   Assert.Equal() Failure: Values differ
+Expected: Angulos { A = 28,96, B = 46,57, C = 104,48 }
+Actual:   Angulos { A = 28,96, B = 46,57, C = 100,81 }
+  Rastreamento de pilha:
+     at Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(Double a, Double b, Double c, Double anguloA, Double anguloB, Double anguloC) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\CalculadoraTrianguloTests.cs:line 73
+   at InvokeStub_CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:00.41]     
+Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(a: 5, b: 3, c: 4, 
+anguloA: 90, anguloB: 36,869999999999997, anguloC: 53,130000000000003) [FAIL]
+[xUnit.net 00:00:00.41]     
+Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(a: 4, b: 5, c: 6, 
+anguloA: 41,409999999999997, anguloB: 55,770000000000003, anguloC: 82,819999999999993) [FAIL]
+[xUnit.net 00:00:00.41]     
+Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(a: 4, b: 2, c: 3, 
+anguloA: 104,48, anguloB: 28,960000000000001, anguloC: 46,57) [FAIL]
+  Com falha Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(a: 5, b: 3, c: 4, anguloA: 90, anguloB: 36,869999999999997, anguloC: 53,130000000000003) [< 1 ms]
+  Mensagem de erro:
+   Assert.Equal() Failure: Values differ
+Expected: Angulos { A = 90, B = 36,87, C = 53,13 }
+Actual:   Angulos { A = 90, B = 36,87, C = 63,26 }
+  Rastreamento de pilha:
+     at Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(Double a, Double b, Double c, Double anguloA, Double anguloB, Double anguloC) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\CalculadoraTrianguloTests.cs:line 73
+   at InvokeStub_CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(a: 4, b: 5, c: 6, anguloA: 41,409999999999997, anguloB: 55,770000000000003, anguloC: 82,819999999999993) [< 1 ms]
+  Mensagem de erro:
+   Assert.Equal() Failure: Values differ
+Expected: Angulos { A = 41,41, B = 55,77, C = 82,82 }
+Actual:   Angulos { A = 41,41, B = 55,77, C = 84,02 }
+  Rastreamento de pilha:
+     at Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(Double a, Double b, Double c, Double anguloA, Double anguloB, Double anguloC) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\CalculadoraTrianguloTests.cs:line 73
+   at InvokeStub_CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(a: 4, b: 2, c: 3, anguloA: 104,48, anguloB: 28,960000000000001, anguloC: 46,57) [< 1 ms]
+  Mensagem de erro:
+   Assert.Equal() Failure: Values differ
+Expected: Angulos { A = 104,48, B = 28,96, C = 46,57 }
+Actual:   Angulos { A = 104,48, B = 28,96, C = 62,72 }
+  Rastreamento de pilha:
+     at Triangulos.Tests.CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(Double a, Double b, Double c, Double anguloA, Double anguloB, Double anguloC) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\CalculadoraTrianguloTests.cs:line 73
+   at InvokeStub_CalculadoraTrianguloTests.Angulos_LadosValidos_RetornaAngulosOpostosArredondados(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+Com falha! ÔÇô Com falha:    14, Aprovado:    84, Ignorado:     0, Total:    98, Dura├º├úo: 73 ms - Triangulos.Tests.dll (net8.0)

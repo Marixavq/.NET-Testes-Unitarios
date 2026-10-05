@@ -1,0 +1,230 @@
+﻿SENSIBILIDADE - B03 (RN02: triangulo degenerado)
+Reintroducao: em ClassificadorTriangulo.EhTriangulo, as tres comparacoes '<=' voltaram a ser '<'
+('a + b < c', 'a + c < b', 'b + c < a').
+Comando: dotnet test --filter "FullyQualifiedName~ClassificadorTrianguloTests"
+Resultado esperado: EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse e
+Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo falham para os casos degenerados
+(1,2,3 e permutacoes; 1,1,2 e permutacoes).
+=====================================================================
+  Determinando os projetos a serem restaurados...
+  Todos os projetos est├úo atualizados para restaura├º├úo.
+  Triangulos.Core -> F:\.NET-Testes-Unitarios\src\Triangulos.Core\bin\Debug\net8.0\Triangulos.Core.dll
+  Triangulos.Api -> F:\.NET-Testes-Unitarios\src\Triangulos.Api\bin\Debug\net8.0\Triangulos.Api.dll
+  Triangulos.Tests -> F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\bin\Debug\net8.0\Triangulos.Tests.dll
+Execu├º├úo de teste para F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\bin\Debug\net8.0\Triangulos.Tests.dll (.NETCoreApp,Version=v8.0)
+1 arquivos de teste no total corresponderam ao padr├úo especificado.
+dotnet : [xUnit.net 00:00:00.35]     
+Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(a: 3, b: 1, c: 
+2) [FAIL]
+No C:\Users\buttler\AppData\Local\Temp\ps-script-f8197e6a-149f-4857-9f5f-d86a7faee41b.ps1:111 caractere:1
++ dotnet test --nologo --filter "FullyQualifiedName~ClassificadorTriang ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([xUnit.net 00:0...1, c: 2) [FAIL]:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[xUnit.net 00:00:00.35]     
+Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(a: 2, b: 1, c: 
+3) [FAIL]
+[xUnit.net 00:00:00.36]     
+Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(a: 1, b: 1, c: 
+2) [FAIL]
+  Com falha Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(a: 3, b: 1, c: 2) [2 ms]
+  Mensagem de erro:
+   Assert.Equal() Failure: Values differ
+Expected: NaoEhTriangulo
+Actual:   Escaleno
+  Rastreamento de pilha:
+     at Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\ClassificadorTrianguloTests.cs:line 86
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+  Com falha Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(a: 2, b: 1, c: 3) [< 1 ms]
+  Mensagem de erro:
+   Assert.Equal() Failure: Values differ
+Expected: NaoEhTriangulo
+Actual:   Escaleno
+  Rastreamento de pilha:
+     at Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\ClassificadorTrianguloTests.cs:line 86
+   at InvokeStub_ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(a: 1, b: 1, c: 2) [< 1 ms]
+  Mensagem de erro:
+   Assert.Equal() Failure: Values differ
+Expected: NaoEhTriangulo
+Actual:   Isosceles
+  Rastreamento de pilha:
+     at Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\ClassificadorTrianguloTests.cs:line 86
+   at InvokeStub_ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:00.36]     
+Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(a: 1, b: 2, c: 
+1) [FAIL]
+[xUnit.net 00:00:00.36]     
+Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(a: 3, b: 2, c: 
+1) [FAIL]
+  Com falha Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(a: 1, b: 2, c: 1) [< 1 ms]
+  Mensagem de erro:
+   Assert.Equal() Failure: Values differ
+Expected: NaoEhTriangulo
+Actual:   Isosceles
+  Rastreamento de pilha:
+     at Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\ClassificadorTrianguloTests.cs:line 86
+   at InvokeStub_ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(a: 3, b: 2, c: 1) [< 1 ms]
+  Mensagem de erro:
+   Assert.Equal() Failure: Values differ
+Expected: NaoEhTriangulo
+Actual:   Escaleno
+  Rastreamento de pilha:
+     at Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\ClassificadorTrianguloTests.cs:line 86
+   at InvokeStub_ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(a: 2, b: 1, c: 1) [< 1 ms]
+  Mensagem de erro:
+   Assert.Equal() Failure: Values differ
+Expected: NaoEhTriangulo
+Actual:   Isosceles
+  Rastreamento de pilha:
+[xUnit.net 00:00:00.36]     
+Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(a: 2, b: 1, c: 
+1) [FAIL]
+     at Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\ClassificadorTrianguloTests.cs:line 86
+[xUnit.net 00:00:00.36]     
+Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(a: 1, b: 3, c: 
+2) [FAIL]
+   at InvokeStub_ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(Object, Span`1)
+[xUnit.net 00:00:00.36]     
+Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(a: 1, b: 2, c: 
+3) [FAIL]
+[xUnit.net 00:00:00.36]     
+Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(a: 2, b: 3, c: 
+1) [FAIL]
+[xUnit.net 00:00:00.36]     
+Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(a: 1, b: 2, c: 3) [FAIL]
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(a: 1, b: 3, c: 2) [< 1 ms]
+  Mensagem de erro:
+   Assert.Equal() Failure: Values differ
+Expected: NaoEhTriangulo
+Actual:   Escaleno
+  Rastreamento de pilha:
+     at Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\ClassificadorTrianguloTests.cs:line 86
+   at InvokeStub_ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(a: 1, b: 2, c: 3) [< 1 ms]
+  Mensagem de erro:
+   Assert.Equal() Failure: Values differ
+Expected: NaoEhTriangulo
+Actual:   Escaleno
+  Rastreamento de pilha:
+     at Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\ClassificadorTrianguloTests.cs:line 86
+   at InvokeStub_ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(a: 2, b: 3, c: 1) [< 1 ms]
+  Mensagem de erro:
+   Assert.Equal() Failure: Values differ
+Expected: NaoEhTriangulo
+Actual:   Escaleno
+  Rastreamento de pilha:
+     at Triangulos.Tests.ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\ClassificadorTrianguloTests.cs:line 86
+   at InvokeStub_ClassificadorTrianguloTests.Classificar_LadosNaoFormamTriangulo_RetornaNaoEhTriangulo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(a: 1, b: 2, c: 3) [< 1 ms]
+  Mensagem de erro:
+   Assert.False() Failure
+Expected: False
+Actual:   True
+  Rastreamento de pilha:
+     at Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\ClassificadorTrianguloTests.cs:line 46
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+[xUnit.net 00:00:00.36]     
+Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(a: 3, b: 2, c: 1) [FAIL]
+[xUnit.net 00:00:00.36]     
+Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(a: 2, b: 1, c: 1) [FAIL]
+[xUnit.net 00:00:00.36]     
+Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(a: 2, b: 3, c: 1) [FAIL]
+[xUnit.net 00:00:00.36]     
+Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(a: 1, b: 2, c: 1) [FAIL]
+[xUnit.net 00:00:00.36]     
+Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(a: 2, b: 1, c: 3) [FAIL]
+[xUnit.net 00:00:00.36]     
+Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(a: 1, b: 1, c: 2) [FAIL]
+  Com falha Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(a: 3, b: 2, c: 1) [< 1 ms]
+  Mensagem de erro:
+   Assert.False() Failure
+Expected: False
+Actual:   True
+  Rastreamento de pilha:
+     at Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\ClassificadorTrianguloTests.cs:line 46
+   at InvokeStub_ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(a: 2, b: 1, c: 1) [< 1 ms]
+  Mensagem de erro:
+   Assert.False() Failure
+Expected: False
+Actual:   True
+  Rastreamento de pilha:
+     at Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\ClassificadorTrianguloTests.cs:line 46
+   at InvokeStub_ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(a: 2, b: 3, c: 1) [< 1 ms]
+  Mensagem de erro:
+   Assert.False() Failure
+Expected: False
+Actual:   True
+  Rastreamento de pilha:
+[xUnit.net 00:00:00.37]     
+Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(a: 3, b: 1, c: 2) [FAIL]
+[xUnit.net 00:00:00.37]     
+Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(a: 1, b: 3, c: 2) [FAIL]
+     at Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\ClassificadorTrianguloTests.cs:line 46
+   at InvokeStub_ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(a: 1, b: 2, c: 1) [< 1 ms]
+  Mensagem de erro:
+   Assert.False() Failure
+Expected: False
+Actual:   True
+  Rastreamento de pilha:
+     at Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\ClassificadorTrianguloTests.cs:line 46
+   at InvokeStub_ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(a: 2, b: 1, c: 3) [< 1 ms]
+  Mensagem de erro:
+   Assert.False() Failure
+Expected: False
+Actual:   True
+  Rastreamento de pilha:
+     at Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\ClassificadorTrianguloTests.cs:line 46
+   at InvokeStub_ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(a: 1, b: 1, c: 2) [< 1 ms]
+  Mensagem de erro:
+   Assert.False() Failure
+Expected: False
+Actual:   True
+  Rastreamento de pilha:
+     at Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\ClassificadorTrianguloTests.cs:line 46
+   at InvokeStub_ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(a: 3, b: 1, c: 2) [< 1 ms]
+  Mensagem de erro:
+   Assert.False() Failure
+Expected: False
+Actual:   True
+  Rastreamento de pilha:
+     at Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\ClassificadorTrianguloTests.cs:line 46
+   at InvokeStub_ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Com falha Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(a: 1, b: 3, c: 2) [< 1 ms]
+  Mensagem de erro:
+   Assert.False() Failure
+Expected: False
+Actual:   True
+  Rastreamento de pilha:
+     at Triangulos.Tests.ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(Double a, Double b, Double c) in F:\.NET-Testes-Unitarios\tests\Triangulos.Tests\ClassificadorTrianguloTests.cs:line 46
+   at InvokeStub_ClassificadorTrianguloTests.EhTriangulo_LadosNaoFormamTriangulo_RetornaFalse(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+Com falha! ÔÇô Com falha:    18, Aprovado:    56, Ignorado:     0, Total:    74, Dura├º├úo: 61 ms - Triangulos.Tests.dll (net8.0)
