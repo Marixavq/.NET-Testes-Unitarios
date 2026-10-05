@@ -24,7 +24,7 @@ public static class CalculadoraTriangulo
 
         var anguloA = ParaGraus(Math.Acos(Limitar((b * b + c * c - a * a) / (2 * b * c))));
         var anguloB = ParaGraus(Math.Acos(Limitar((a * a + c * c - b * b) / (2 * a * c))));
-        var anguloC = ParaGraus(Math.Acos(Limitar((a * a + b * b - c * c) / (2 * a * c))));
+        var anguloC = ParaGraus(Math.Acos(Limitar((a * a + b * b - c * c) / (2 * a * b))));
 
         return new Angulos(Arredondar(anguloA), Arredondar(anguloB), Arredondar(anguloC));
     }
