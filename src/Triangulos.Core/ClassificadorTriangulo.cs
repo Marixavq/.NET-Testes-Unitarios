@@ -19,6 +19,11 @@ public static class ClassificadorTriangulo
             return false;
         }
 
+        if (b + c < a)
+        {
+            return false;
+        }
+
         return true;
     }
 
