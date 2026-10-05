@@ -34,7 +34,7 @@ public static class ClassificadorTriangulo
             return TipoTriangulo.Equilatero;
         }
 
-        if (a == b || b == c)
+        if (a == b || b == c || a == c)
         {
             return TipoTriangulo.Isosceles;
         }
