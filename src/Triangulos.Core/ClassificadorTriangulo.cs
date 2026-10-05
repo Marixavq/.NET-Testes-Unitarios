@@ -4,7 +4,7 @@ public static class ClassificadorTriangulo
 {
     public static bool EhTriangulo(double a, double b, double c)
     {
-        if (a <= 0 || b <= 0 || c <= 0)
+        if (!double.IsFinite(a) || !double.IsFinite(b) || !double.IsFinite(c) || a <= 0 || b <= 0 || c <= 0)
         {
             return false;
         }
