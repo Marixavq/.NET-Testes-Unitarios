@@ -15,7 +15,7 @@ public static class CalculadoraTriangulo
         var s = (a + b + c) / 2;
         var area = Math.Sqrt(Math.Max(0, s * (s - a) * (s - b) * (s - c)));
 
-        return Math.Round(area, 1, MidpointRounding.AwayFromZero);
+        return Math.Round(area, 2, MidpointRounding.AwayFromZero);
     }
 
     public static Angulos Angulos(double a, double b, double c)
