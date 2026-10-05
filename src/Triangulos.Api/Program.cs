@@ -14,7 +14,7 @@ app.MapGet("/health", () => Results.Ok(new { status = "ok" }));
 
 var api = app.MapGroup("/api/triangulos");
 
-api.MapGet("/classificar", (double a, double b, double c = 0) =>
+api.MapGet("/classificar", (double a, double b, double c) =>
     Results.Ok(new { tipo = ClassificadorTriangulo.Classificar(a, b, c) }));
 
 api.MapPost("/analisar", (LadosRequest lados) =>
